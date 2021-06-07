@@ -382,6 +382,10 @@ main {
         }
     }
 
+    &__text {
+        line-height: 1.15em;
+    }
+
     &__text_accent {
         font-size: 24px;
         text-transform: uppercase;
