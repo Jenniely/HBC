@@ -38,6 +38,11 @@ main {
     width: calc(100vw - 6%);
   }
 }
+@media (max-width: 850px) {
+  .container {
+    width: calc(100vw - 10%);
+  }
+}
 
 .header {
   position: absolute;
@@ -92,9 +97,10 @@ main {
   background-position: center;
   height: 95vh;
   width: 100%;
-  padding-top: 200px;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 599px) {
   .hero {
@@ -113,6 +119,11 @@ main {
 @media (max-width: 850px) {
   .hero__logo-holder {
     height: 250px;
+  }
+}
+@media (max-width: 599px) {
+  .hero__logo-holder {
+    height: 200px;
   }
 }
 .hero__logo-holder img {
@@ -322,6 +333,17 @@ main {
     font-size: 18px;
   }
 }
+.believe__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+@media (max-width: 850px) {
+  .believe__content {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
 .believe__text_accent {
   font-size: 24px;
   text-transform: uppercase;
@@ -492,6 +514,10 @@ main {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

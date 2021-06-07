@@ -56,6 +56,10 @@ main {
     @include tablet-and-smaller {
         width: calc(100vw - 6%);
     }
+
+    @include tablet-and-smaller {
+        width: calc(100vw - 10%);
+    }
 }
 
 .header {
@@ -115,9 +119,10 @@ main {
     background-position: center;
     height: 95vh;
     width: 100%;
-    padding-top: 200px;
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    align-items: center;
 
     @include for-phone-only {
         height: 75vh;
@@ -135,6 +140,10 @@ main {
         @include tablet-and-smaller {
             height: 250px;
 
+        }
+
+        @include for-phone-only {
+            height: 200px;
         }
 
         & img {
@@ -362,6 +371,17 @@ main {
         }
     }
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20%;
+
+        @include tablet-and-smaller {
+            width: 100%;
+            padding: 0 5%;
+        }
+    }
+
     &__text_accent {
         font-size: 24px;
         text-transform: uppercase;
@@ -554,4 +574,8 @@ main {
         }
     }
 
+}
+
+.hidden {
+    display: none;
 }
